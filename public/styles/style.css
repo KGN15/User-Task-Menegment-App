@@ -1,0 +1,260 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  height: 100vh;
+}
+
+/* Root Container */
+.root {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+    margin: 277px auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Left Section */
+.welcome {
+  flex: 1;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.welcome h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #4aa9ff;
+}
+.rootEliment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome p {
+  font-size: 16px;
+  color: #cfcfcf;
+}
+
+/* Right Form Section */
+.form {
+  flex: 1;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Input Style */
+.form input[type="text"] {
+  padding: 12px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.form input[type="text"]:focus {
+  border-color: #4aa9ff;
+  box-shadow: 0 0 8px rgba(74, 169, 255, 0.5);
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Submit Button */
+.form input[type="submit"] {
+  padding: 12px;
+  background: #4aa9ff;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+  background: #76c3ff;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .root {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+#Viewusersbtn {
+  margin-top: 20px;
+  padding: 10px 15px;
+
+  background: #ff6b6b;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+#Viewusersbtn:hover {
+  background: #ff8787;
+  transform: translateY(-2px);
+}
+#Viewusersbtn a {
+  text-decoration: none;
+  color: black;
+}
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar h2 {
+  font-size: 22px;
+  color: #4aa9ff;
+}
+
+.home-link {
+  color: #76c3ff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.home-link:hover {
+  color: #a7dbff;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.title {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4aa9ff;
+}
+
+/* Wrapper for Cards */
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+.card-wrapper p{
+  text-align: center;
+  font-size: 18px;
+  color: #bdbdbd;
+  margin-top: 20px;
+}
+/* User Card Style */
+.user-card {
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.user-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.user-card p {
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  background: #4aa9ff;
+  color: #000;
+}
+
+.edit-btn:hover {
+  background: #76c3ff;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #ff4747;
+  color: #000;
+}
+
+.delete-btn:hover {
+  background: #ff6f6f;
+  transform: translateY(-2px);
+}
