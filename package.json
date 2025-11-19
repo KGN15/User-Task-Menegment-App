@@ -1,0 +1,18 @@
+{
+  "name": "2-nd-project",
+  "version": "1.0.0",
+  "description": "'This is a project of user caunter and user details project. that we can make and use express.js node.js and mongodb, ejs with html and css. and this mini project is for practice mongodb and express (Backend Devlopment)'",
+  "license": "ISC",
+  "author": "Mashudur Rahman Mahir Vai",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.4",
+    "mongos": "^0.0.0"
+  }
+}

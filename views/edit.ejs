@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Id Management Software</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="rootEliment">
+
+    <div class="root">
+      <div class="welcome">
+        <h1>Update User Id</h1>
+        <div class="btns">
+          <button id="Viewusersbtn"><a href="/users">Back To The Users</a></button>
+      </div>
+    </div>
+    <div class="form">
+      <form action="/update/<%= users._id %>" method="POST">
+        <input type="text" placeholder="Enter User Name" name="name" value="<%= users.name %>"/>
+        <input type="text" placeholder="Enter User Email" name="email" value="<%= users.email %>"/>
+        <input type="text" placeholder="Enter User Photo Url" name="Image" value="<%= users.Image %>"/>
+        <input type="submit" value="Update User" />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

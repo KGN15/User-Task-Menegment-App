@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Id Management Software</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="rootEliment">
+
+    <div class="root">
+      <div class="welcome">
+        <h1>User Id Management Software</h1>
+        <p>This is the main page of the User Id Management Software.</p>
+        <div class="btns">
+          <button id="Viewusersbtn"><a href="/users">View Users</a></button>
+      </div>
+    </div>
+    <div class="form">
+      <form action="/create" method="POST">
+        <input type="text" placeholder="Enter User Name" name="name"/>
+        <input type="text" placeholder="Enter User Email" name="email"/>
+        <input type="text" placeholder="Enter User Photo Url" name="Image"/>
+        <input type="submit" value="Create User" />
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
